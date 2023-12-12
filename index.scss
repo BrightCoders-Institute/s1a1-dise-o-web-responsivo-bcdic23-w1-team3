@@ -1,0 +1,15 @@
+$base-color: #c6538c;
+$palecyan: hsl(193, 100%, 96%);
+$DarkCyan:hsl(192, 100%, 9%);
+$Grayish: hsl(208, 11%, 55%);
+.seccionUno{
+    background-color:$palecyan;
+        }
+
+.seccionDos{
+    background-color:$Grayish;
+}
+
+.seccionTres{
+    background-color:$DarkCyan;
+}
