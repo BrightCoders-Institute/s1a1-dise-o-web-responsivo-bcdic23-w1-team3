@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 20px;
+  border: none;
+}
+
+img {
+  margin: 30px;
+}
+
+.tarjeta {
+  padding: 20px;
+}
+.tarjeta h2,
+.tarjeta p {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+header {
+  margin: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.divhero {
+  background-image: url("../../img/bg-hero-mobile.svg");
+}
+
+.herocontent {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.btnHero {
+  background-color: #c6538c;
+  color: white;
+}
+
+.button1 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: black;
+  font-weight: bold;
+}/*# sourceMappingURL=index.css.map */

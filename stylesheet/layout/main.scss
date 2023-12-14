@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+button {
+  background-color:white ;
+  border-radius: 15px;
+  padding: 5px 20px;
+  border: none;
+}
+
+img{
+  margin: 30px;
+}
+
+.tarjeta {
+  // Estilos para el div, si es necesario
+  padding: 20px;
+  h2,
+  p {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+}
+
