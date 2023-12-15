@@ -1,23 +1,57 @@
 body {
   margin: 0;
+  font-family: $font-body;
 }
 
 button {
   background-color:white ;
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 5px 20px;
   border: none;
 }
 
 img{
-  margin: 30px;
+  margin-bottom: 40px;
+}
+
+.cuerpo{
+   margin: 100px 0;
+}
+
+.cuerpo img{
+  text-align: center;
+  align-items: center;
 }
 
 .tarjeta {
   // Estilos para el div, si es necesario
-  padding: 20px;
+  padding: 20px 0px; // creo q si
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   h2,
   p {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+}
+
+.divfloat{
+  width: 325px;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  transform: translateY(-100px) translateX(10px);
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  h2 {
     display: flex;
     text-align: center;
     flex-direction: column;

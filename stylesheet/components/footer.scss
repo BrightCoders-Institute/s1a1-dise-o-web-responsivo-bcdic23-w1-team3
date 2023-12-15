@@ -1,0 +1,50 @@
+.foot{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: $DarkCyan;
+    color: white;
+    margin: 200px 0 0 0;
+    img{
+        margin-left: 20px;
+    }
+}
+
+.logofooter svg{
+    fill: white !important;
+}
+
+.firstS{
+    display: flex;
+    flex-direction: column;
+}
+
+.firstS div{
+    display: flex;
+    margin-bottom: 20px;
+    p {
+        margin: 0;
+    }
+    img{
+        margin: 0 20px;
+    }
+}
+
+.footerinfo{
+    margin: 20px;
+}
+
+.icons{
+    ion-icon{
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+    }
+    p {
+        font-size: 12px;
+    }
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

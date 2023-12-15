@@ -1,8 +1,17 @@
 header {
-  margin: 20px 15px;
+  padding: 20px 15px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  
+
+  button {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.huddle-logo {
+  margin: 0;
 }

@@ -1,23 +1,42 @@
-.divhero{
-  //background-color: $Grayish;
-  background-image:$bgimgmobile;
+.divhero {
+  background-color: $palecyan-background-hero;
+  background-image: $bgimgmobile;
+  background-repeat: no-repeat;
+  font-family: $font-header;
+  object-fit: contain;
 }
 
-.herocontent{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
+.hero-container {
   align-items: center;
-  margin: 15px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.btnHero{
-  background-color: $base-color;
-  color:  white;
-}
+  @include tablet {
+    flex-direction: row;
+  }
 
-.button1{
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  color: black; // letras faaaaaaaaaaaaaaak foken chet
-  font-weight: bold; // blacker letters
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  button {
+    background-color: $base-color;
+    color: $white;
+    margin: 30px 0;
+    padding: 12.5px 60px;
+  }
+
+  img {
+    margin: 0 auto 0 auto;
+  }
 }

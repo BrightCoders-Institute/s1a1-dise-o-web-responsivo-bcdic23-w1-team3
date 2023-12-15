@@ -1,11 +1,171 @@
-.seccionUno {
-  background-color: hsl(193, 100%, 96%);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-.seccionDos {
-  background-color: hsl(208, 11%, 55%);
+button {
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 20px;
+  border: none;
 }
 
-.seccionTres {
+img {
+  margin-bottom: 40px;
+}
+
+.cuerpo {
+  margin: 100px 0;
+}
+
+.cuerpo img {
+  text-align: center;
+  align-items: center;
+}
+
+.tarjeta {
+  padding: 20px 0px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.tarjeta h2,
+.tarjeta p {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.divfloat {
+  width: 325px;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  transform: translateY(-100px) translateX(10px);
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.divfloat h2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+header {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+header button {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: black;
+  font-weight: bold;
+}
+
+.huddle-logo {
+  margin: 0;
+}
+
+.divhero {
+  background-color: hsla(193, 100%, 96%, 0.6);
+  background-image: url("../../img/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+  }
+}
+.hero-container__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+}
+.hero-container h1 {
+  font-size: 25px;
+}
+.hero-container button {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  margin: 30px 0;
+  padding: 12.5px 60px;
+}
+.hero-container img {
+  margin: 0 auto 0 auto;
+}
+
+.foot {
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: hsl(192, 100%, 9%);
+  color: white;
+  margin: 200px 0 0 0;
+}
+.foot img {
+  margin-left: 20px;
+}
+
+.logofooter svg {
+  fill: white !important;
+}
+
+.firstS {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstS div {
+  display: flex;
+  margin-bottom: 20px;
+}
+.firstS div p {
+  margin: 0;
+}
+.firstS div img {
+  margin: 0 20px;
+}
+
+.footerinfo {
+  margin: 20px;
+}
+
+.icons {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icons ion-icon {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+}
+.icons p {
+  font-size: 12px;
 }/*# sourceMappingURL=index.css.map */

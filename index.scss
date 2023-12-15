@@ -1,15 +1,18 @@
-$base-color: #c6538c;
-$palecyan: hsl(193, 100%, 96%);
-$DarkCyan:hsl(192, 100%, 9%);
-$Grayish: hsl(208, 11%, 55%);
-.seccionUno{
-    background-color:$palecyan;
-        }
+@import
+  './stylesheet/abstracts/mixins';
 
-.seccionDos{
-    background-color:$Grayish;
-}
+@import
+  './stylesheet/utils/colors';
 
-.seccionTres{
-    background-color:$DarkCyan;
-}
+@import
+  url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); //'Poppins', sans-serif
+@import
+  url('https://fonts.google.com/specimen/Open+Sans'); // 'Open Sans', sans-serif
+
+@import
+  './stylesheet/layout/main';
+
+@import
+  './stylesheet/components/navbar',
+  './stylesheet/components/hero',
+  './stylesheet/components/footer';
