@@ -9,9 +9,22 @@ header {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: $black;
     font-weight: bold;
+    @include desktop-xl {
+      padding: 15px 60px;
+    }
+  }
+  
+  button:hover {
+    color:$whitish;
   }
 }
 
 .huddle-logo {
   margin: 0;
+  
+  @include desktop-xl {
+    width: 200px;
+    height: 30px;
+    padding: 20px 0 0 40px;
+  }
 }

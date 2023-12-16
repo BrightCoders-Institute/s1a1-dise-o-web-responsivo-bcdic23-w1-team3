@@ -1,50 +1,101 @@
-.foot {
-    background-color: $DarkCyan;
-    color: $white;
-    margin: 200px 0 0 0;
-    padding-bottom: 50px;
-    padding-top: 130px;
-    img{
-        margin-left: 20px;
-    }
+footer {
+  background-color: $DarkCyan;
+  color: $white;
+  margin-top: 200px;
+  padding: 130px 0 50px 0;
+ 
+  @include desktop-xl {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@include desktop-xl {
+  .footerinfo {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .logofooter svg {
-    fill: $white !important;
+  fill: $white !important;
 }
 
 .firstS {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  
+  @include desktop-xl {
+    justify-content: flex-start;
+    width: 300px;
+  }
+
+  img {
+    margin-left: 1.5rem;
+  }
 }
 
-.firstS div {
-    display: flex;
-    margin-bottom: 20px;
-    p {
-        margin: 0;
-    }
-    img{
-        margin: 0 20px;
-    }
+.firstS > div {
+  display: flex;
+  margin-bottom: 20px;
+
+  p { 
+    margin: 0; 
+  }
+
+  img {
+    margin: 0 20px;
+  }
 }
 
 .footerinfo {
-    margin: 20px;
+  margin: 20px;
+
+  @include desktop-xl {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;   
+
+    div{
+      margin-left: 100px;
+    }
+  }
 }
 
 .icons {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    ion-icon {
-        height: 25px;
-        padding: 5px;
-        width: 25px;
-    }
-    p {
-        font-size: 12px;
-    }
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  @include desktop-xl {
+    justify-content: space-between;
+    height: 120px;
+  }
+  
+  ion-icon {
+    border: solid 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0.2rem;
+  }
+
+  ion-icon:nth-child(2) {
+    margin: 0 1rem;
+  }
+
+  ion-icon:hover {
+    fill: $base-color;
+    border: 2px solid $base-color;
+  }
+
+  p {
+    font-size: 12px;
+  }  
 }

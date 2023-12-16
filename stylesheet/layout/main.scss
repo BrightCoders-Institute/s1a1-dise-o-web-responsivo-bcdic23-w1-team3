@@ -7,7 +7,13 @@ button {
   background-color:$white ;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
   padding: 5px 20px;
+  transition: background-color 0.4s ease-in-out;
+
+  @include desktop-xl {
+    border-radius: 50px;
+  }
 }
 
 img {
@@ -19,10 +25,22 @@ img {
    flex-direction: column;
    margin: 0 auto;
    width: 90%;
+  
+  @include desktop-xl {
+    padding: 0 5rem;
+  }
+}
+
+@include desktop-xl {
+  .card:first-child, .card:last-child {
+    flex-direction: row-reverse;
+    padding-left: 5rem;
+  }
 }
 
 .card {
   // Estilos para el div, si es necesario
+  // max-width: 1400px;
   align-items: center;
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -30,20 +48,38 @@ img {
   flex-direction: column;
   margin-bottom: 38px;
   overflow: hidden;
-  padding: 20px 0px; // creo q si
+  padding: 20px 0; // creo q si
 
-  h2, p {
-    align-items: center;
+  @include desktop-xl {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  h2 {
     margin: 15px;
     text-align: center;
+
+    @include desktop-xl {
+      align-items: baseline;
+      font-size: 30px;
+      text-align: unset;
+    }
   }
+
   p {
     color: $Grayish;
     font-size: 15px;
-    line-height: 1.5;
     letter-spacing: 0.8px;
+    line-height: 1.5;
+    margin: 15px;
+    text-align: center;
+
+    @include desktop-xl {
+      font-size: 18px;
+      font-weight: 400;
+      text-align: unset;
+      width: 30rem;
+    }
   }
   
   img {
@@ -51,6 +87,13 @@ img {
     margin: 0 auto;     
     padding: 40px 0;
     text-align: center;
+
+    @include desktop-xl {
+      height: 22rem;
+      margin: 0;
+      padding: 60px 10rem;
+      width: 30rem;
+    }
   }
 }
 
@@ -66,21 +109,42 @@ img {
   position: absolute;
   transform: translateX(12px) translateY(80px);
   width: 350px;
+  
+  @include desktop-xl {
+    transform: translateX(50%) translateY(80px);
+    width: 50%;
+  }
+
   h2 {
     align-items: center;
     color: $DarkCyan;
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin: 15px;
+    margin: 15px; 
     padding-bottom: 12px;
     text-align: center;
+
+    @include desktop-xl {
+      font-size: 32px;
+    }
   }
+
   button {
     background-color: $base-color;
     color: $white;
+    cursor: pointer;
     font-size: 11px;
     margin: 0;
     padding: 15px 45px;
+    
+    @include desktop-xl {
+      font-size: 20px;
+      padding: 1.5rem 7rem;
+    }
+  }
+
+  button:hover {
+    background-color:$base-color-hovered;
   }
 }
