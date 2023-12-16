@@ -1,4 +1,5 @@
 .divhero {
+  margin-bottom: 50px;
   background-color: $palecyan-background-hero;
   background-image: $bgimgmobile;
   background-repeat: no-repeat;
@@ -12,10 +13,6 @@
   flex-direction: column;
   justify-content: center;
 
-  @include tablet {
-    flex-direction: row;
-  }
-
   &__content {
     align-items: center;
     display: flex;
@@ -26,6 +23,7 @@
   }
 
   h1 {
+    color: $DarkCyan;
     font-size: 25px;
   }
 
@@ -40,3 +38,5 @@
     margin: 0 auto 0 auto;
   }
 }
+
+

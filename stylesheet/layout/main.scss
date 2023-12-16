@@ -1,62 +1,86 @@
 body {
-  margin: 0;
   font-family: $font-body;
+  margin: 0;
 }
 
 button {
-  background-color:white ;
+  background-color:$white ;
   border-radius: 25px;
-  padding: 5px 20px;
   border: none;
+  padding: 5px 20px;
 }
 
-img{
+img {
   margin-bottom: 40px;
 }
 
-.cuerpo{
-   margin: 100px 0;
+.card_container {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 90%;
 }
 
-.cuerpo img{
-  text-align: center;
-  align-items: center;
-}
-
-.tarjeta {
+.card {
   // Estilos para el div, si es necesario
-  padding: 20px 0px; // creo q si
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  h2,
-  p {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px;
-  }
-}
-
-.divfloat{
-  width: 325px;
-  display: flex;
-  position: absolute;
-  background-color: white;
-  transform: translateY(-100px) translateX(10px);
-  flex-direction: column;
   align-items: center;
-  padding: 20px 0px;
   border-radius: 15px;
-  overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  h2 {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 38px;
+  overflow: hidden;
+  padding: 20px 0px; // creo q si
+
+  h2, p {
     align-items: center;
+    display: flex;
+    flex-direction: column;
     margin: 15px;
+    text-align: center;
+  }
+  p {
+    color: $Grayish;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+  }
+  
+  img {
+    align-items: center;
+    margin: 0 auto;     
+    padding: 40px 0;
+    text-align: center;
   }
 }
 
+.divfloat {
+  align-items: center;
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 40px 0;
+  position: absolute;
+  transform: translateX(12px) translateY(80px);
+  width: 350px;
+  h2 {
+    align-items: center;
+    color: $DarkCyan;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 15px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+  button {
+    background-color: $base-color;
+    color: $white;
+    font-size: 11px;
+    margin: 0;
+    padding: 15px 45px;
+  }
+}

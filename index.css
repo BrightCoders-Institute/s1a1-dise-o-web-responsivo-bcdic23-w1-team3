@@ -1,72 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.google.com/specimen/Open+Sans");
 body {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 
 button {
-  background-color: white;
+  background-color: #fff;
   border-radius: 25px;
-  padding: 5px 20px;
   border: none;
+  padding: 5px 20px;
 }
 
 img {
   margin-bottom: 40px;
 }
 
-.cuerpo {
-  margin: 100px 0;
-}
-
-.cuerpo img {
-  text-align: center;
-  align-items: center;
-}
-
-.tarjeta {
-  padding: 20px 0px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.tarjeta h2,
-.tarjeta p {
+.card_container {
   display: flex;
-  text-align: center;
   flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card {
   align-items: center;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 38px;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+.card h2, .card p {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 15px;
+  text-align: center;
+}
+.card p {
+  color: hsl(208, 11%, 55%);
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+.card img {
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .divfloat {
-  width: 325px;
-  display: flex;
-  position: absolute;
-  background-color: white;
-  transform: translateY(-100px) translateX(10px);
-  flex-direction: column;
   align-items: center;
-  padding: 20px 0px;
+  background-color: #fff;
   border-radius: 15px;
-  overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 40px 0;
+  position: absolute;
+  transform: translateX(12px) translateY(80px);
+  width: 350px;
 }
 .divfloat h2 {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
   align-items: center;
+  color: hsl(192, 100%, 9%);
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
   margin: 15px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+.divfloat button {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  font-size: 11px;
+  margin: 0;
+  padding: 15px 45px;
 }
 
 header {
-  padding: 20px 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 15px;
 }
 header button {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -79,6 +102,7 @@ header button {
 }
 
 .divhero {
+  margin-bottom: 50px;
   background-color: hsla(193, 100%, 96%, 0.6);
   background-image: url("../../img/bg-hero-mobile.svg");
   background-repeat: no-repeat;
@@ -107,6 +131,7 @@ header button {
   width: 75%;
 }
 .hero-container h1 {
+  color: hsl(192, 100%, 9%);
   font-size: 25px;
 }
 .hero-container button {
@@ -120,18 +145,18 @@ header button {
 }
 
 .foot {
-  padding-top: 100px;
-  padding-bottom: 50px;
   background-color: hsl(192, 100%, 9%);
-  color: white;
+  color: #fff;
   margin: 200px 0 0 0;
+  padding-bottom: 50px;
+  padding-top: 130px;
 }
 .foot img {
   margin-left: 20px;
 }
 
 .logofooter svg {
-  fill: white !important;
+  fill: #fff !important;
 }
 
 .firstS {
@@ -155,16 +180,16 @@ header button {
 }
 
 .icons {
-  text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .icons ion-icon {
-  width: 25px;
   height: 25px;
   padding: 5px;
+  width: 25px;
 }
 .icons p {
   font-size: 12px;
