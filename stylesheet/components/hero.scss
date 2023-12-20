@@ -1,0 +1,72 @@
+.divhero {
+  margin-bottom: 50px;
+  background-color: $palecyan-background-hero;
+  background-image: $bgimgmobile;
+  background-repeat: no-repeat;
+  font-family: $font-header;
+  object-fit: contain;
+  @include desktop-xl {
+    background-image: $backgroundimage;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-img {
+  @include desktop-xl {
+    width: 800px;
+    height: 550px;
+    margin: 0;
+  }
+}
+
+.hero-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include desktop-xl {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+
+    @include desktop-xl {
+      text-align: left;
+      display: block;
+      width: 30%;
+    }
+  }
+
+
+  h1 {
+    color: $DarkCyan;
+    font-size: 25px;
+  }
+
+  button {
+    background-color: $base-color;
+    color: $white;
+    margin: 30px 0;
+    padding: 12.5px 60px;
+    @include desktop-xl {      
+      padding: 20px 80px;
+    }
+  }
+
+  button:hover {
+    background-color:$base-color-hovered;
+  }
+
+  img {
+    margin: 0 auto 0 auto;
+  }
+}

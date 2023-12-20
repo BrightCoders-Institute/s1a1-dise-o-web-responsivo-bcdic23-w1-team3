@@ -1,0 +1,18 @@
+@import
+  './stylesheet/abstracts/mixins';
+
+@import
+  './stylesheet/utils/colors';
+
+@import
+  url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); //'Poppins', sans-serif
+@import
+  url('https://fonts.google.com/specimen/Open+Sans'); // 'Open Sans', sans-serif
+
+@import
+  './stylesheet/layout/main';
+
+@import
+  './stylesheet/components/navbar',
+  './stylesheet/components/hero',
+  './stylesheet/components/footer';
